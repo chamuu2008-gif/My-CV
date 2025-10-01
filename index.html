@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV - Your Name</title>
+  <style>
+    :root{--accent:#0b74de;--muted:#6b7280;--bg:#f7f7fb}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.45;margin:0;background:var(--bg);color:#111}
+    .container{max-width:900px;margin:32px auto;background:#fff;border-radius:12px;box-shadow:0 8px 30px rgba(12,15,20,0.08);overflow:hidden}
+    .grid{display:grid;grid-template-columns:260px 1fr}
+    .sidebar{background:#fbfdff;padding:28px;border-right:1px solid #eef2f7}
+    .main{padding:28px}
+    h1{margin:0;font-size:28px}
+    h2{font-size:16px;margin:0 0 8px}
+    p.lead{color:var(--muted);margin:8px 0 18px}
+    .contact{font-size:14px;color:var(--muted);margin-top:12px}
+    .section{margin-bottom:18px}
+    .section h3{font-size:13px;margin:0 0 10px;color:var(--accent);text-transform:uppercase;letter-spacing:.08em}
+    .item{margin-bottom:12px}
+    .item .title{font-weight:600}
+    .item .meta{font-size:13px;color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#eef6ff;padding:6px 10px;border-radius:999px;font-size:13px}
+    .edu-list, .exp-list{list-style:none;padding:0;margin:0}
+    .exp-list li{margin-bottom:14px}
+    .download{display:inline-block;margin-top:18px;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+    @media (max-width:760px){.grid{grid-template-columns:1fr}.sidebar{border-right:none;border-bottom:1px solid #eef2f7}}
+    /* Print-friendly tweaks */
+    @media print{body{background:#fff} .container{box-shadow:none;margin:0;border-radius:0}.download{display:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="grid">
+      <aside class="sidebar">
+        <h1>Your Name</h1>
+        <p class="lead">Position title • Location</p>
+
+        <div class="section">
+          <h3>Contact</h3>
+          <div class="contact">
+            Email: you@example.com<br>
+            Phone: +94 71 012 3456<br>
+            Address: City, Country
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Skills</h3>
+          <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">React</span>
+            <span class="skill">Python</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Languages</h3>
+          <div class="contact">English (Fluent)<br>Sinhala (Native)</div>
+        </div>
+
+        <div class="section">
+          <a class="download" href="#" onclick="window.print();return false;">Print / Save as PDF</a>
+        </div>
+      </aside>
+
+      <main class="main">
+        <section class="section">
+          <h2>Professional Summary</h2>
+          <p>Brief 2–4 line summary about yourself. Mention your main strengths, years of experience, and what you bring to an employer. Keep it concise and tailored to the job you want.</p>
+        </section>
+
+        <section class="section">
+          <h3 style="color:#222;">Work Experience</h3>
+          <ul class="exp-list">
+            <li>
+              <div class="item">
+                <div class="title">Software Engineer — Company Name</div>
+                <div class="meta">Jan 2022 — Present • City, Country</div>
+                <p class="contact">Describe 3–5 achievements or responsibilities. Use bullet points for longer lists.</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="item">
+                <div class="title">Junior Developer — Company Name</div>
+                <div class="meta">Jun 2020 — Dec 2021 • City, Country</div>
+                <p class="contact">Short description of accomplishments. Keep each line focused on impact and numbers where possible.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h3 style="color:#222;">Education</h3>
+          <ul class="edu-list">
+            <li class="item"><div class="title">B.Sc. in Computer Science — University Name</div><div class="meta">2016 — 2020</div></li>
+            <li class="item"><div class="title">Diploma — Institution</div><div class="meta">2014 — 2016</div></li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h3 style="color:#222;">Projects</h3>
+          <div class="item">
+            <div class="title">Project Name</div>
+            <div class="meta">Short description — link or tech used</div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h3 style="color:#222;">Certifications &amp; Interests</h3>
+          <div class="contact">Certification 1 • Certification 2 • Open-source contributor • Hiking</div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+</body>
+</html>
